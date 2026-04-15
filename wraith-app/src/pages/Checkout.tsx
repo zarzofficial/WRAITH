@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { useCartStore } from '../store/useCartStore';
 
 export function Checkout() {
