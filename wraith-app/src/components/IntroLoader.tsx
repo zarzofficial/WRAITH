@@ -30,7 +30,7 @@ export function IntroLoader({ onComplete }: { onComplete: () => void }) {
       />
       
       <motion.div 
-        className="absolute w-[120vw] h-[120vh] rounded-full mix-blend-screen pointer-events-none"
+        className="absolute w-[120vw] h-[120vh] rounded-full mix-blend-screen pointer-events-none z-0"
         style={{
           background: "radial-gradient(ellipse at center, rgba(180,200,255,0.04) 0%, rgba(0,0,0,0) 50%)",
           filter: "blur(50px)"
@@ -39,6 +39,22 @@ export function IntroLoader({ onComplete }: { onComplete: () => void }) {
         animate={{ opacity: [0, 0.4, 0], x: -100, y: 50 }}
         transition={{ duration: 5, ease: "easeInOut", delay: 0.5 }}
       />
+
+      {/* 3D Logo Emerging from Behind */}
+      <motion.div
+        className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none"
+        initial={{ opacity: 0, scale: 0.1, rotateZ: -15, y: 50, filter: "blur(20px)" }}
+        animate={{ opacity: 0.15, scale: [0.1, 1.2], rotateZ: 0, y: 0, filter: "blur(0px)" }}
+        exit={{ opacity: 0, scale: 1.5, filter: "blur(20px)" }}
+        transition={{ duration: 4.5, ease: "easeOut", delay: 0.2 }}
+      >
+        <img 
+          src="/logo.png" 
+          alt="Brand Aura" 
+          className="w-64 md:w-96 h-auto invert brightness-200"
+          style={{ filter: "drop-shadow(0px 0px 50px rgba(255,255,255,1))" }}
+        />
+      </motion.div>
 
       {/* 3D WRAITH Text with Light Sweep */}
       <motion.div
