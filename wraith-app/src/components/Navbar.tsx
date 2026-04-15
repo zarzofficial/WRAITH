@@ -34,12 +34,12 @@ export function Navbar() {
           <motion.img 
             src="/logo.png" 
             alt="Wraith Artifact Logo" 
-            className="w-20 md:w-32 h-auto invert brightness-125 contrast-125"
+            className="w-20 md:w-32 h-auto invert mix-blend-screen"
             style={{ filter: "drop-shadow(0px 0px 10px rgba(255,255,255,0.4))" }}
             whileHover={{ 
               scale: 1.1, 
               rotateZ: 3,
-              filter: "drop-shadow(0px 0px 20px rgba(255,255,255,0.9)) invert(1) brightness(1.2)"
+              filter: "drop-shadow(0px 0px 20px rgba(255,255,255,0.9)) invert(1)"
             }}
             whileTap={{ scale: 0.95 }}
             animate={{ y: [0, -4, 0] }}
