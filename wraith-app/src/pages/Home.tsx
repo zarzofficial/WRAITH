@@ -53,7 +53,7 @@ export function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="h-screen w-full bg-surface-container-lowest flex flex-col items-center justify-center relative overflow-hidden"
+        className="h-screen w-full bg-surface-container-lowest flex flex-col items-center justify-center relative overflow-hidden touch-pan-y"
         style={{ perspective: 1200 }}
       >
         <motion.div 
@@ -85,7 +85,7 @@ export function Home() {
             animate={{ scale: 1, y: 0, opacity: 1 }}
             transition={{ delay: 0.3, duration: 2, ease: "easeOut" }}
             style={{ transform: "translateZ(100px)" }}
-            className="font-headline text-[14vw] md:text-[10vw] font-light tracking-[0.4em] text-white select-none drop-shadow-2xl"
+            className="font-headline text-[13vw] md:text-[10vw] font-light tracking-[0.2em] md:tracking-[0.4em] text-white select-none drop-shadow-2xl text-center w-full"
           >
             WRAITH
           </motion.h1>
