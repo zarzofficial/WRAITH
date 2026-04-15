@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WRAITH - Checkout</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#ffffff",
+                    "surface-container-low": "#1b1b1b",
+                    "on-primary": "#1a1c1c",
+                    "tertiary-container": "#919191",
+                    "inverse-surface": "#e2e2e2",
+                    "primary-fixed": "#5d5f5f",
+                    "surface-dim": "#131313",
+                    "surface-container-highest": "#353535",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-bright": "#393939",
+                    "on-secondary-container": "#e2e2e2",
+                    "surface-container-high": "#2a2a2a",
+                    "on-tertiary": "#1b1c1c",
+                    "on-primary-container": "#000000",
+                    "background": "#131313",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "primary-fixed-dim": "#454747",
+                    "error": "#ffb4ab",
+                    "on-secondary": "#1a1c1c",
+                    "on-secondary-fixed-variant": "#3a3c3c",
+                    "surface-tint": "#c6c6c7",
+                    "secondary-fixed-dim": "#aaabab",
+                    "on-tertiary-container": "#000000",
+                    "surface-variant": "#353535",
+                    "on-primary-fixed-variant": "#e2e2e2",
+                    "on-error": "#690005",
+                    "surface-container": "#1f1f1f",
+                    "secondary": "#c6c6c7",
+                    "tertiary": "#e3e2e2",
+                    "primary-container": "#d4d4d4",
+                    "on-surface": "#e2e2e2",
+                    "tertiary-fixed-dim": "#464747",
+                    "tertiary-fixed": "#5e5e5e",
+                    "inverse-primary": "#5d5f5f",
+                    "outline-variant": "#474747",
+                    "surface": "#131313",
+                    "on-error-container": "#ffdad6",
+                    "primary": "#ffffff",
+                    "on-surface-variant": "#c6c6c6",
+                    "on-primary-fixed": "#ffffff",
+                    "on-tertiary-fixed-variant": "#e3e2e2",
+                    "secondary-container": "#454747",
+                    "outline": "#919191",
+                    "inverse-on-surface": "#303030",
+                    "secondary-fixed": "#c6c6c7",
+                    "on-background": "#e2e2e2",
+                    "error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e2e2e2;
+            font-family: 'Inter', sans-serif;
+        }
+        input:focus {
+            outline: none !important;
+            ring: 0 !important;
+            border-color: #ffffff !important;
+        }
+        /* Custom scrollbar for minimalist feel */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #0e0e0e; }
+        ::-webkit-scrollbar-thumb { background: #353535; }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar: Execution of Shared Component -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md flex justify-between items-center px-12 py-8 w-full">
+<div class="text-2xl font-light tracking-[0.5em] text-white cursor-pointer">WRAITH</div>
+<div class="flex items-center space-x-12">
+<div class="flex space-x-12">
+<a class="font-['Noto_Serif'] tracking-[0.2em] uppercase text-sm text-neutral-400 hover:text-white transition-colors duration-400" href="#">Shop</a>
+<a class="font-['Noto_Serif'] tracking-[0.2em] uppercase text-sm text-neutral-400 hover:text-white transition-colors duration-400" href="#">Contact</a>
+</div>
+<div class="flex items-center">
+<button class="text-white hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-24">
+<!-- Left Column: Shipping & Payment -->
+<div class="lg:col-span-7">
+<h1 class="font-headline text-4xl mb-16 tracking-widest uppercase">Checkout</h1>
+<section class="mb-16">
+<h2 class="font-label text-[10px] tracking-widest uppercase mb-8 text-on-surface-variant">01 — Shipping Information</h2>
+<form class="space-y-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="group">
+<label class="block font-label text-[10px] tracking-widest uppercase mb-2 text-on-surface-variant group-focus-within:text-white transition-colors">Full Name</label>
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant py-3 px-0 text-white placeholder-neutral-700 transition-all focus:border-white" placeholder="ALEXANDER VANCE" type="text"/>
+</div>
+<div class="group">
+<label class="block font-label text-[10px] tracking-widest uppercase mb-2 text-on-surface-variant group-focus-within:text-white transition-colors">Phone Number</label>
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant py-3 px-0 text-white placeholder-neutral-700 transition-all focus:border-white" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+<div class="group">
+<label class="block font-label text-[10px] tracking-widest uppercase mb-2 text-on-surface-variant group-focus-within:text-white transition-colors">Street Address</label>
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant py-3 px-0 text-white placeholder-neutral-700 transition-all focus:border-white" placeholder="721 FIFTH AVENUE" type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="group">
+<label class="block font-label text-[10px] tracking-widest uppercase mb-2 text-on-surface-variant group-focus-within:text-white transition-colors">City / State</label>
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant py-3 px-0 text-white placeholder-neutral-700 transition-all focus:border-white" placeholder="NEW YORK, NY" type="text"/>
+</div>
+<div class="group">
+<label class="block font-label text-[10px] tracking-widest uppercase mb-2 text-on-surface-variant group-focus-within:text-white transition-colors">Postal Code</label>
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant py-3 px-0 text-white placeholder-neutral-700 transition-all focus:border-white" placeholder="10022" type="text"/>
+</div>
+</div>
+</form>
+</section>
+<section>
+<h2 class="font-label text-[10px] tracking-widest uppercase mb-8 text-on-surface-variant">02 — Secure Payment</h2>
+<div class="bg-surface-container-low p-10 space-y-10">
+<div class="group">
+<label class="block font-label text-[10px] tracking-widest uppercase mb-2 text-on-surface-variant group-focus-within:text-white transition-colors">Card Number</label>
+<div class="relative">
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant py-3 px-0 text-white placeholder-neutral-700 transition-all focus:border-white pr-10" placeholder="0000 0000 0000 0000" type="text"/>
+<span class="material-symbols-outlined absolute right-0 top-3 text-on-surface-variant" data-icon="credit_card">credit_card</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+<div class="group">
+<label class="block font-label text-[10px] tracking-widest uppercase mb-2 text-on-surface-variant group-focus-within:text-white transition-colors">Expiry Date</label>
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant py-3 px-0 text-white placeholder-neutral-700 transition-all focus:border-white" placeholder="MM / YY" type="text"/>
+</div>
+<div class="group">
+<label class="block font-label text-[10px] tracking-widest uppercase mb-2 text-on-surface-variant group-focus-within:text-white transition-colors">CVC</label>
+<input class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant py-3 px-0 text-white placeholder-neutral-700 transition-all focus:border-white" placeholder="***" type="password"/>
+</div>
+</div>
+</div>
+</section>
+<div class="mt-16">
+<button class="w-full bg-white text-black py-6 font-label tracking-[0.3em] uppercase text-xs hover:bg-neutral-200 transition-colors duration-400">
+                        Complete Order
+                    </button>
+<p class="mt-4 text-[10px] text-center text-on-surface-variant tracking-widest uppercase">
+                        Secure SSL Encryption — Encrypted Transaction
+                    </p>
+</div>
+</div>
+<!-- Right Column: Order Summary -->
+<div class="lg:col-span-5">
+<div class="bg-surface-container-lowest border border-neutral-900 p-12 sticky top-32">
+<h2 class="font-headline text-2xl mb-12 tracking-widest uppercase">Order Summary</h2>
+<div class="space-y-10 mb-12">
+<!-- Line Item 1 -->
+<div class="flex gap-6 items-start">
+<div class="w-24 h-32 bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-700" data-alt="Close-up of a high-end luxury black wool overcoat with intricate texture and sharp tailoring in dramatic studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWIW9ojWCkY9DAT9iD9LOj-5LQxW7yuU-9Ikv1SpnyxP1RAOwanRdR4kIb_Zxjw7f9V-qHZ8HScuXp8lB_fIQZVTAeeylF-QYsgC3-7knVWS9_vvOpQM8kJ5KI-6rm5s0haC_t4-mEkIwmL0RXhKtEumYcz_H-vVneDFMZQvh-KR5cXnS3PtctUWl9pDyc9n9rh7cA-qP3mZO2_z23gOZ4Ah0_30_bUOl1ku7VIqjlXi9yAmtlSv2ceqsGfpxzS1IspPwlq5hPjPo"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<h3 class="font-label text-xs tracking-widest uppercase">Ghost Tailored Overcoat</h3>
+<span class="font-body text-sm">$2,450</span>
+</div>
+<p class="text-[10px] text-on-surface-variant tracking-widest uppercase mt-2">Size: 48 (M) / Black</p>
+<p class="text-[10px] text-on-surface-variant tracking-widest uppercase">Qty: 1</p>
+</div>
+</div>
+<!-- Line Item 2 -->
+<div class="flex gap-6 items-start">
+<div class="w-24 h-32 bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-700" data-alt="Minimalist luxury eyewear, black thick frames resting on a dark velvet surface with a single focused spotlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7oLD7kGxhWz4MDYyTmghNkg48YavY83KLUkwCsGjnBqL7dgJ1H3BZOVEmh5KjPLc4-gLzCPsDCiVGnap-u50U3zbrAiqGgYUXRYlePoUwQszDS2J-KOAk4szlyOlDYGHWTgbyNvaTxvHdiWdBL9bV87aYp1ZC_Uiyc9TEIxQ1k_LGqNh8QLG7tknUFT71_i8X6yewf_JQploYzL85eIxeZsiGkVxdzcAk2ekyM3-Tr6f5SvYhlh2zMQh8_b83lQf91Hl6XI5BF44"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<h3 class="font-label text-xs tracking-widest uppercase">Obscura Eyewear</h3>
+<span class="font-body text-sm">$480</span>
+</div>
+<p class="text-[10px] text-on-surface-variant tracking-widest uppercase mt-2">One Size / Onyx</p>
+<p class="text-[10px] text-on-surface-variant tracking-widest uppercase">Qty: 1</p>
+</div>
+</div>
+</div>
+<div class="space-y-4 pt-8 border-t border-neutral-900">
+<div class="flex justify-between text-[10px] tracking-widest uppercase text-on-surface-variant">
+<span>Subtotal</span>
+<span>$2,930.00</span>
+</div>
+<div class="flex justify-between text-[10px] tracking-widest uppercase text-on-surface-variant">
+<span>Shipping</span>
+<span>Complimentary</span>
+</div>
+<div class="flex justify-between text-[10px] tracking-widest uppercase text-on-surface-variant">
+<span>Taxes</span>
+<span>$249.05</span>
+</div>
+<div class="flex justify-between pt-6 mt-4 border-t border-neutral-800 text-lg tracking-widest uppercase font-label">
+<span>Total</span>
+<span>$3,179.05</span>
+</div>
+</div>
+<div class="mt-12 bg-surface-container p-6">
+<p class="text-[9px] tracking-[0.2em] uppercase leading-relaxed text-neutral-500">
+                            Standard shipping delivers within 3-5 business days. Returns accepted within 14 days of receipt for all unworn atelier items.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer: Execution of Shared Component -->
+<footer class="w-full border-t border-neutral-900 bg-neutral-950">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 max-w-none w-full">
+<div>
+<div class="text-xl font-light tracking-[0.4em] text-white mb-6">WRAITH</div>
+<p class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 leading-relaxed">
+                    Atelier of the unseen. Crafting the digital void with architectural precision and high-fashion heritage.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-['Inter'] tracking-widest uppercase text-[10px] text-white mb-2">Navigation</span>
+<a class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 hover:text-white transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 hover:text-white transition-colors duration-300" href="#">Terms of Service</a>
+<a class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 hover:text-white transition-colors duration-300" href="#">Sustainability</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-['Inter'] tracking-widest uppercase text-[10px] text-white mb-2">Orders</span>
+<a class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 hover:text-white transition-colors duration-300" href="#">Shipping</a>
+<a class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 hover:text-white transition-colors duration-300" href="#">Returns</a>
+<div class="pt-8">
+<p class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500">© 2024 WRAITH ATELIER. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

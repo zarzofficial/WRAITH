@@ -1,0 +1,203 @@
+<html class="dark"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400&amp;family=Inter:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#ffffff",
+                    "surface-container-low": "#1b1b1b",
+                    "on-primary": "#1a1c1c",
+                    "tertiary-container": "#919191",
+                    "inverse-surface": "#e2e2e2",
+                    "primary-fixed": "#5d5f5f",
+                    "surface-dim": "#131313",
+                    "surface-container-highest": "#353535",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-bright": "#393939",
+                    "on-secondary-container": "#e2e2e2",
+                    "surface-container-high": "#2a2a2a",
+                    "on-tertiary": "#1b1c1c",
+                    "on-primary-container": "#000000",
+                    "background": "#131313",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "primary-fixed-dim": "#454747",
+                    "error": "#ffb4ab",
+                    "on-secondary": "#1a1c1c",
+                    "on-secondary-fixed-variant": "#3a3c3c",
+                    "surface-tint": "#c6c6c7",
+                    "secondary-fixed-dim": "#aaabab",
+                    "on-tertiary-container": "#000000",
+                    "surface-variant": "#353535",
+                    "on-primary-fixed-variant": "#e2e2e2",
+                    "on-error": "#690005",
+                    "surface-container": "#1f1f1f",
+                    "secondary": "#c6c6c7",
+                    "tertiary": "#e3e2e2",
+                    "primary-container": "#d4d4d4",
+                    "on-surface": "#e2e2e2",
+                    "tertiary-fixed-dim": "#464747",
+                    "tertiary-fixed": "#5e5e5e",
+                    "inverse-primary": "#5d5f5f",
+                    "outline-variant": "#474747",
+                    "surface": "#131313",
+                    "on-error-container": "#ffdad6",
+                    "primary": "#ffffff",
+                    "on-surface-variant": "#c6c6c6",
+                    "on-primary-fixed": "#ffffff",
+                    "on-tertiary-fixed-variant": "#e3e2e2",
+                    "secondary-container": "#454747",
+                    "outline": "#919191",
+                    "inverse-on-surface": "#303030",
+                    "secondary-fixed": "#c6c6c7",
+                    "on-background": "#e2e2e2",
+                    "error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0e0e;
+        }
+    </style>
+</head>
+<body class="text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-md flex justify-between items-center px-12 py-8 w-full">
+<div class="text-2xl font-light tracking-[0.5em] text-white font-headline">WRAITH</div>
+<div class="flex items-center space-x-12">
+<div class="hidden md:flex space-x-8">
+<a class="font-['Noto_Serif'] tracking-[0.2em] uppercase text-sm text-neutral-400 hover:text-white transition-colors duration-400 hover:opacity-70 transition-opacity" href="#">Shop</a>
+<a class="font-['Noto_Serif'] tracking-[0.2em] uppercase text-sm text-white border-b border-white pb-1 hover:opacity-70 transition-opacity" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<span class="material-symbols-outlined text-white cursor-pointer hover:opacity-70 transition-opacity" data-icon="shopping_bag">shopping_bag</span>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 min-h-screen flex flex-col items-center">
+<!-- Hero Section -->
+<header class="w-full max-w-7xl mb-24 flex flex-col items-center text-center">
+<h1 class="font-headline text-5xl md:text-7xl font-light tracking-tighter text-primary mb-6">Inquiries</h1>
+<div class="w-12 h-[1px] bg-outline mb-6"></div>
+<p class="font-body text-on-surface-variant max-w-xl text-sm md:text-base leading-relaxed tracking-wide">
+                Our atelier operates with intentional silence. For private appointments, wholesale inquiries, or garment care support, please reach out via the channel most suited to your needs.
+            </p>
+</header>
+<!-- Main Content: Form & Details -->
+<div class="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+<!-- Contact Form -->
+<section class="order-2 lg:order-1">
+<form class="space-y-12">
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant">Full Name</label>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary text-white font-light placeholder:text-neutral-800 transition-colors duration-400" placeholder="GIOVANNI WRAITH" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant">Email Address</label>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary text-white font-light placeholder:text-neutral-800 transition-colors duration-400" placeholder="ATELIER@WRAITH.STUDIO" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant">Subject</label>
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary text-white font-light placeholder:text-neutral-800 transition-colors duration-400" placeholder="BESPOKE CONSULTATION" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] tracking-[0.2em] uppercase text-on-surface-variant">Message</label>
+<textarea class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary text-white font-light placeholder:text-neutral-800 transition-colors duration-400 resize-none" placeholder="DESCRIBE YOUR REQUEST..." rows="4"></textarea>
+</div>
+<button class="w-full md:w-auto px-16 py-5 bg-on-primary-fixed text-on-primary font-label text-[10px] tracking-[0.3em] uppercase hover:opacity-90 transition-opacity duration-400" type="submit">
+                        Send Message
+                    </button>
+</form>
+</section>
+<!-- Contact Details & Map/Visual -->
+<section class="order-1 lg:order-2 space-y-16">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-4">
+<h3 class="font-label text-[10px] tracking-[0.2em] uppercase text-primary">The Atelier</h3>
+<p class="font-body text-sm text-on-surface-variant leading-loose">
+                            12 VIA MONTENAPOLEONE<br/>
+                            MILAN, ITALY 20121
+                        </p>
+</div>
+<div class="space-y-4">
+<h3 class="font-label text-[10px] tracking-[0.2em] uppercase text-primary">Direct Lines</h3>
+<p class="font-body text-sm text-on-surface-variant leading-loose">
+                            CONCIERGE@WRAITH.STUDIO<br/>
+                            +39 02 8765 4321
+                        </p>
+</div>
+</div>
+<div class="relative w-full aspect-[4/3] bg-surface-container-lowest overflow-hidden">
+<img class="w-full h-full object-cover opacity-50 filter grayscale" data-alt="Monochrome architectural shot of a minimalist brutalist concrete building with sharp shadows and high contrast lighting in a dark urban setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCthoirPk-LWYpZw6H26NynxdEcIG1fISymCPSvQatK-NhwyvevzeJ-b4KXgqmdGRTaQnmx6jqTauVDbXx-4P5_Q7hADL980MjC9rXc-hqdH5XTblGC8NvI8X2c-adryBRoW12oFK8Ne9fknHS_D263OBryVU7YiRDlv0tNdXO5y3jSyAQ8nIyHN_Yz9gVdwKarO19FNEtb5fRVxqgM67tW6rThvlbOz76ki-CbXqY_KzxMVu_vTueifnEcQHQs5yAT5ArWPBfL_60"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+</div>
+<div class="pt-8 space-y-6">
+<h3 class="font-label text-[10px] tracking-[0.2em] uppercase text-primary">Digital Presence</h3>
+<div class="flex space-x-8">
+<a class="text-white hover:opacity-50 transition-opacity duration-400" href="#">
+<span class="material-symbols-outlined" data-icon="brand_awareness">brand_awareness</span>
+<span class="sr-only">Instagram</span>
+</a>
+<a class="text-white hover:opacity-50 transition-opacity duration-400" href="#">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+<span class="sr-only">X (Twitter)</span>
+</a>
+<a class="text-white hover:opacity-50 transition-opacity duration-400" href="#">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+<span class="sr-only">YouTube</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-neutral-900 bg-neutral-950">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-20 max-w-none w-full">
+<div class="space-y-6">
+<div class="text-xl font-light tracking-[0.4em] text-white font-headline">WRAITH</div>
+<p class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 max-w-xs leading-relaxed">
+                    Sourcing rare materials. crafting eternal silhouettes. the void in luxury.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="font-['Inter'] tracking-widest uppercase text-[10px] text-white mb-2">Legal</h4>
+<a class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 hover:text-white transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 hover:text-white transition-colors duration-300" href="#">Terms of Service</a>
+<a class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 hover:text-white transition-colors duration-300" href="#">Sustainability</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="font-['Inter'] tracking-widest uppercase text-[10px] text-white mb-2">Service</h4>
+<a class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 hover:text-white transition-colors duration-300" href="#">Shipping</a>
+<a class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500 hover:text-white transition-colors duration-300" href="#">Returns</a>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+<div class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500">© 2024 WRAITH ATELIER. ALL RIGHTS RESERVED.</div>
+<div class="font-['Inter'] tracking-widest uppercase text-[10px] text-neutral-500">Milano / Tokyo / Paris</div>
+</div>
+</footer>
+</body></html>

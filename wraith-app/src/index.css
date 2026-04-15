@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-tertiary-fixed: #ffffff;
+  --color-surface-container-low: #1b1b1b;
+  --color-on-primary: #1a1c1c;
+  --color-tertiary-container: #919191;
+  --color-inverse-surface: #e2e2e2;
+  --color-primary-fixed: #5d5f5f;
+  --color-surface-dim: #131313;
+  --color-surface-container-highest: #353535;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-bright: #393939;
+  --color-on-secondary-container: #e2e2e2;
+  --color-surface-container-high: #2a2a2a;
+  --color-on-tertiary: #1b1c1c;
+  --color-on-primary-container: #000000;
+  --color-background: #131313;
+  --color-on-secondary-fixed: #1a1c1c;
+  --color-primary-fixed-dim: #454747;
+  --color-error: #ffb4ab;
+  --color-on-secondary: #1a1c1c;
+  --color-on-secondary-fixed-variant: #3a3c3c;
+  --color-surface-tint: #c6c6c7;
+  --color-secondary-fixed-dim: #aaabab;
+  --color-on-tertiary-container: #000000;
+  --color-surface-variant: #353535;
+  --color-on-primary-fixed-variant: #e2e2e2;
+  --color-on-error: #690005;
+  --color-surface-container: #1f1f1f;
+  --color-secondary: #c6c6c7;
+  --color-tertiary: #e3e2e2;
+  --color-primary-container: #d4d4d4;
+  --color-on-surface: #e2e2e2;
+  --color-tertiary-fixed-dim: #464747;
+  --color-tertiary-fixed: #5e5e5e;
+  --color-inverse-primary: #5d5f5f;
+  --color-outline-variant: #474747;
+  --color-surface: #131313;
+  --color-on-error-container: #ffdad6;
+  --color-primary: #ffffff;
+  --color-on-surface-variant: #c6c6c6;
+  --color-on-primary-fixed: #ffffff;
+  --color-on-tertiary-fixed-variant: #e3e2e2;
+  --color-secondary-container: #454747;
+  --color-outline: #919191;
+  --color-inverse-on-surface: #303030;
+  --color-secondary-fixed: #c6c6c7;
+  --color-on-background: #e2e2e2;
+  --color-error-container: #93000a;
+
+  --font-headline: "Noto Serif", serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+}
+
+body { 
+  background-color: var(--color-surface-container-lowest); 
+  color: var(--color-inverse-surface); 
+  scroll-behavior: smooth; 
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
