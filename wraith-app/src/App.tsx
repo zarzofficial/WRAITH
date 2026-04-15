@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from 'framer-motion';
 import { Layout } from "./components/Layout";
@@ -11,15 +11,13 @@ import { Contact } from "./pages/Contact";
 import { IntroLoader } from "./components/IntroLoader";
 
 export default function App() {
-  const [introFinished, setIntroFinished] = useState(false);
-
-  useEffect(() => {
-    // Check if the user has already seen the intro during this session
-    const hasSeenIntro = sessionStorage.getItem('wraith-intro-seen');
-    if (hasSeenIntro) {
-      setIntroFinished(true);
+  const [introFinished, setIntroFinished] = useState(() => {
+    if (typeof window === 'undefined') {
+      return false;
     }
-  }, []);
+
+    return sessionStorage.getItem('wraith-intro-seen') === 'true';
+  });
 
   const handleIntroComplete = () => {
     sessionStorage.setItem('wraith-intro-seen', 'true');
